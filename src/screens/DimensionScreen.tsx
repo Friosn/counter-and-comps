@@ -1,23 +1,24 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {Text, View, Dimensions} from 'react-native';
+import {StyleSheet, useWindowDimensions} from 'react-native';
+import {Text, View} from 'react-native'; //I could alse get it from the 'screen'
 
 //The problem with this is that if we change to horizontal the camere, wht W and H stay the same; for that we can use the useWindowDimensions();
-const {width, height} = Dimensions.get('window'); //I could alse get it from the 'screen'
+/* const {width, height} = Dimensions.get('window') */ const DimensionScreen =
+  () => {
+    const {width, height} = useWindowDimensions();
 
-const DimensionScreen = () => {
-  return (
-    <View>
-      <View style={styles.container}>
-        <View style={styles.containerRed} />
-        <View style={styles.containeYellow} />
+    return (
+      <View>
+        <View style={styles.container}>
+          <View style={{...styles.containerRed, width: width * 0.8}} />
+          <View style={styles.containeYellow} />
+        </View>
+        <Text style={styles.title}>
+          W:{width} H:{height}
+        </Text>
       </View>
-      <Text style={styles.title}>
-        W:{width} H:{height}
-      </Text>
-    </View>
-  );
-};
+    );
+  };
 
 const styles = StyleSheet.create({
   container: {

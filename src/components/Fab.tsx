@@ -55,14 +55,14 @@ const Fab = ({title, onPress, position = 'br'}: Props) => {
 const styles = StyleSheet.create({
   fabLocation: {
     position: 'absolute',
-    bottom: 100,
+    bottom: 70,
     borderRadius: 100,
   },
   left: {
-    left: 25,
+    left: 35,
   },
   right: {
-    right: 25,
+    right: 35,
   },
   fab: {
     backgroundColor: '#5856D6',

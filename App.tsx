@@ -1,13 +1,9 @@
 import React from 'react';
-import {View} from 'react-native';
-import HeyWorldScreen from './src/screens/HeyWorldScreen';
+
+import CounterScreen from './src/screens/CounterScreen';
 
 const App = () => {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <HeyWorldScreen />
-    </View>
-  );
+  return <CounterScreen />;
 };
 
 export default App;

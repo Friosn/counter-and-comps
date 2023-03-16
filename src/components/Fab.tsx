@@ -1,5 +1,11 @@
 import React from 'react';
-import {StyleSheet, TouchableOpacity, View} from 'react-native';
+import {
+  StyleSheet,
+  TouchableNativeFeedback,
+  View,
+  TouchableOpacity,
+  Platform,
+} from 'react-native';
 import {Text} from 'react-native';
 
 interface Props {
@@ -9,26 +15,48 @@ interface Props {
 }
 
 const Fab = ({title, onPress, position = 'br'}: Props) => {
-  return (
-    <View>
-      <TouchableOpacity
+  const ios = () => {
+    return (
+      <View
         style={[
           styles.fabLocation,
           position === 'bl' ? styles.left : styles.right,
-        ]}
-        onPress={onPress}>
-        <View style={styles.fab}>
-          <Text style={styles.fabText}>{title}</Text>
-        </View>
-      </TouchableOpacity>
-    </View>
-  );
+        ]}>
+        <TouchableOpacity activeOpacity={0.8} onPress={onPress}>
+          <View style={styles.fab}>
+            <Text style={styles.fabText}>{title}</Text>
+          </View>
+        </TouchableOpacity>
+      </View>
+    );
+  };
+
+  const android = () => {
+    return (
+      <View
+        style={[
+          styles.fabLocation,
+          position === 'bl' ? styles.left : styles.right,
+        ]}>
+        <TouchableNativeFeedback
+          onPress={onPress}
+          background={TouchableNativeFeedback.Ripple('blue', false, 25)}>
+          <View style={styles.fab}>
+            <Text style={styles.fabText}>{title}</Text>
+          </View>
+        </TouchableNativeFeedback>
+      </View>
+    );
+  };
+
+  return Platform.OS === 'android' ? android() : ios();
 };
 
 const styles = StyleSheet.create({
   fabLocation: {
     position: 'absolute',
     bottom: 100,
+    borderRadius: 100,
   },
   left: {
     left: 25,
@@ -42,6 +70,15 @@ const styles = StyleSheet.create({
     height: 50,
     borderRadius: 100,
     justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
   },
   fabText: {
     color: 'white',

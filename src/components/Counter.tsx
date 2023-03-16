@@ -6,8 +6,8 @@ export const Counter = () => {
   const [counter, setCounter] = useState(10);
 
   return (
-    <View>
-      <View style={{top: 0}}>
+    <View style={styles.container}>
+      <View>
         <Text style={styles.counterText}>Counter: {counter}</Text>
       </View>
       <Fab position="br" title="+10" onPress={() => setCounter(counter + 10)} />
@@ -18,17 +18,15 @@ export const Counter = () => {
 
 const styles = StyleSheet.create({
   counterText: {
-    fontSize: 20,
+    fontSize: 30,
     top: 0,
     textAlign: 'center',
     fontWeight: 'bold',
-    backgroundColor: 'yellow',
     borderRadius: 15,
     padding: 5,
   },
   container: {
-    flex: 1,
     backgroundColor: '#eaeaea',
-    justifyContent: 'space-around',
+    justifyContent: 'center',
   },
 });

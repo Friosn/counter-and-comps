@@ -8,7 +8,7 @@ const HeyWorldScreen = () => {
       style={{
         flex: 1,
         justifyContent: 'space-around',
-        backgroundColor: 'green',
+        backgroundColor: 'white',
         borderRadius: 10,
       }}>
       <View>

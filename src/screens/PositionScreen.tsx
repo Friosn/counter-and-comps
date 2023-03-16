@@ -1,13 +1,18 @@
 import React from 'react';
-import {StyleSheet} from 'react-native';
-import {View} from 'react-native';
+import {StyleSheet, Text, View} from 'react-native';
 
 const PositionScreen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.greenContainer} />
-      <View style={styles.separator} />
-      <View style={styles.yellowContainer} />
+      <View style={styles.greenContainer}>
+        <Text style={styles.title}>Relative</Text>
+      </View>
+      <View style={styles.separator}>
+        <Text style={styles.title}>Relative</Text>
+      </View>
+      <View style={styles.yellowContainer}>
+        <Text style={styles.title}>Relative</Text>
+      </View>
     </View>
   );
 };
@@ -44,6 +49,10 @@ const styles = StyleSheet.create({
     borderWidth: 5,
     borderColor: 'white',
   },
-  title: {},
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: 'black',
+  },
 });
 export default PositionScreen;

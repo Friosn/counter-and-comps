@@ -22,24 +22,23 @@ const styles = StyleSheet.create({
     backgroundColor: 'grey',
     flex: 1,
     flexDirection: 'row',
+    justifyContent: 'flex-end',
+    alignItems: 'flex-end',
   },
   box1: {
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'green',
-    flex: 1,
   },
   box2: {
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'blue',
-    flex: 2,
   },
   box3: {
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'red',
-    flex: 3,
   },
 
   title: {

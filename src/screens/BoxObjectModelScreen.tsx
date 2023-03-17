@@ -16,7 +16,6 @@ const styles = StyleSheet.create({
     borderColor: 'red',
   },
   title: {
-    flex: 1,
     borderWidth: 5,
     borderColor: 'green',
     fontSize: 20,

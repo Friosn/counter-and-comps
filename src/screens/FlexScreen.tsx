@@ -21,6 +21,7 @@ const styles = StyleSheet.create({
   container: {
     backgroundColor: 'grey',
     flex: 1,
+    flexDirection: 'row',
   },
   box1: {
     borderWidth: 6,

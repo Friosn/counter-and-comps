@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
 
-const PositionScreen = () => {
+const PositionAbsoulteScreen = () => {
   return (
     <View style={styles.container}>
       <View style={styles.greenContainer}>
@@ -30,17 +30,15 @@ const styles = StyleSheet.create({
     height: 100,
     borderWidth: 5,
     borderColor: 'white',
-    top: -200,
-    right: 100,
+    position: 'absolute',
   },
   yellowContainer: {
     backgroundColor: 'yellow',
-    width: 100,
+    width: 50,
     height: 100,
     borderWidth: 5,
     borderColor: 'white',
-    top: 200,
-    left: 100,
+    position: 'absolute',
   },
   separator: {
     width: '80%',
@@ -48,6 +46,7 @@ const styles = StyleSheet.create({
     backgroundColor: 'red',
     borderWidth: 5,
     borderColor: 'white',
+    position: 'absolute',
   },
   title: {
     fontSize: 20,
@@ -55,4 +54,4 @@ const styles = StyleSheet.create({
     color: 'black',
   },
 });
-export default PositionScreen;
+export default PositionAbsoulteScreen;

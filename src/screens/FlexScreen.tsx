@@ -13,6 +13,105 @@ const FlexScreen = () => {
       <View style={styles.box3}>
         <Text style={styles.title}>Box 3</Text>
       </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
+      <View style={styles.box1}>
+        <Text style={styles.title}>Box 1</Text>
+      </View>
+      <View style={styles.box2}>
+        <Text style={styles.title}>Box 2</Text>
+      </View>
+      <View style={styles.box3}>
+        <Text style={styles.title}>Box 3</Text>
+      </View>
     </View>
   );
 };
@@ -22,8 +121,9 @@ const styles = StyleSheet.create({
     backgroundColor: 'grey',
     flex: 1,
     flexDirection: 'row',
-    justifyContent: 'flex-end',
-    alignItems: 'flex-end',
+    justifyContent: 'center',
+    alignContent: 'center',
+    flexWrap: 'wrap',
   },
   box1: {
     borderWidth: 6,

@@ -16,8 +16,7 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#28425B',
     justifyContent: 'center',
-    alignItems: 'center',
-    flexDirection: 'row',
+    alignItems: 'flex-start',
   }, //para IOS habría que poner un SafeAreaView del mismo color en el app para que no se vean esos huecos blancos
   purpleBox: {
     width: 100,
@@ -25,6 +24,7 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'purple',
+    alignSelf: 'flex-end',
   },
   orangeBox: {
     width: 100,
@@ -32,7 +32,6 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'orange',
-    marginTop: 100,
   },
   blueBox: {
     width: 100,
@@ -40,6 +39,7 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'blue',
+    alignSelf: 'center',
   },
   title: {
     fontSize: 20,

@@ -1,5 +1,5 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {View, StyleSheet} from 'react-native';
 
 const PosFlexExercise = () => {
   return (
@@ -15,8 +15,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#28425B',
-    flexDirection: 'row-reverse',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
   }, //para IOS habría que poner un SafeAreaView del mismo color en el app para que no se vean esos huecos blancos
   purpleBox: {
     width: 100,
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'orange',
-    alignSelf: 'center',
+    marginTop: 100,
   },
   blueBox: {
     width: 100,
@@ -39,7 +40,6 @@ const styles = StyleSheet.create({
     borderWidth: 6,
     borderColor: 'white',
     backgroundColor: 'blue',
-    alignSelf: 'flex-end',
   },
   title: {
     fontSize: 20,
